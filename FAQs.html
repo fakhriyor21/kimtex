@@ -1,0 +1,145 @@
+<!DOCTYPE html>  
+<html lang="uz">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>FAQ - Universitet</title>  
+  <style>  
+    * {  
+      margin: 0;  
+      padding: 0;  
+      box-sizing: border-box;  
+    }  
+
+    body {  
+      font-family: Arial, sans-serif;  
+      color: #333;   
+      background-image: url('image/banner/banner-1.jpg');  
+      background-size: cover; /* Rasmni tamomlashi */  
+      background-repeat: no-repeat; /* Rasmni takrorlamaslik uchun */  
+      background-position: center; /* Rasmni markazga joylash */  
+    }  
+
+    .container {  
+      width: 80%;  
+      margin: 0 auto;  
+      background-color: rgba(255, 255, 255, 0.8); /* Hujjat ko'rinishi uchun oq fon */  
+      padding: 20px; /* Qirralardan bo'sh joy */  
+      border-radius: 10px; /* Burchaklarni yumshatish */  
+    }  
+
+    header {  
+      text-align: center;  
+      margin: 40px 0;  
+    }  
+
+    header h1 {  
+      font-size: 36px;  
+      color: #2c3e50;  
+    }  
+
+    header p {  
+      font-size: 18px;  
+      color: #7f8c8d;  
+    }  
+
+    .faq-section {  
+      margin-top: 40px;  
+    }  
+
+    .faq-item {  
+      background-color: #ffffff;  
+      border: 1px solid #ddd;  
+      margin-bottom: 15px;  
+      border-radius: 8px;  
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    }  
+
+    .faq-question {  
+      width: 100%;  
+      padding: 15px;  
+      background-color: #3498db;  
+      color: #fff;  
+      border: none;  
+      text-align: left;  
+      font-size: 18px;  
+      cursor: pointer;  
+      border-radius: 8px;  
+    }  
+
+    .faq-answer {  
+      padding: 15px;  
+      background-color: #ecf0f1;  
+      display: none;  
+      border-radius: 0 0 8px 8px;  
+    }  
+
+    .faq-question:hover {  
+      background-color: #2980b9;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <header>  
+      <h1>Tez-tez beriladigan savollar (FAQ)</h1>  
+      <p>Universitetga oid eng ko'p beriladigan savollar va javoblar</p>  
+    </header>  
+    <section class="faq-section">  
+      <div class="faq-item">  
+        <button class="faq-question">Universitetga qanday ariza topshirish mumkin?</button>  
+        <div class="faq-answer">  
+          <p>Ariza topshirish uchun, bizning ariza sahifamiz orqali barcha kerakli hujjatlarni yuklab olib, to'ldirishingiz mumkin.</p>  
+        </div>  
+      </div>  
+
+      <div class="faq-item">  
+        <button class="faq-question">Kurslarga qanday yozilish mumkin?</button>  
+        <div class="faq-answer">  
+          <p>Kurslarimizga yozilish jarayoni saytimizdagi kurslar sahifasidan amalga oshiriladi. Har bir kursning o‘ziga xos talablar mavjud.</p>  
+        </div>  
+      </div>  
+
+      <div class="faq-item">  
+        <button class="faq-question">Universitetda o'qish uchun qanday talablar mavjud?</button>  
+        <div class="faq-answer">  
+          <p>Talablar universitetning rasmiy sayti yoki qabul bo‘yicha sahifada batafsil ko'rsatilgan. Asosiy talablar: yuqori ma'lumot, universitet tomonidan belgilangan kirish imtihonlari.</p>  
+        </div>  
+      </div>  
+
+      <div class="faq-item">  
+        <button class="faq-question">O'qish uchun stipendiya mavjudmi?</button>  
+        <div class="faq-answer">  
+          <p>Ha, stipendiyalar mavjud. Qo'shimcha ma'lumotlar uchun stipendiya sahifasini tekshirib ko'rishingiz mumkin.</p>  
+        </div>  
+      </div>  
+      
+      <div class="faq-item">  
+        <button class="faq-question">Universitetga qanday murojaat qilish mumkin?</button>  
+        <div class="faq-answer">  
+          <p>Siz bizga telefon orqali yoki bog'lanish sahifamiz orqali elektron pochta orqali murojaat qilishingiz mumkin.</p>  
+        </div>  
+      </div>  
+
+    </section>  
+  </div>  
+
+  <script>  
+    document.addEventListener('DOMContentLoaded', function() {  
+      const faqQuestions = document.querySelectorAll('.faq-question');  
+
+      faqQuestions.forEach(question => {  
+        question.addEventListener('click', function() {  
+          const answer = this.nextElementSibling;  
+
+          if (answer.style.display === 'block') {  
+            answer.style.display = 'none';  
+          } else {  
+            answer.style.display = 'block';  
+          }  
+        });  
+      });  
+    });  
+  </script>  
+</body>  
+</html>

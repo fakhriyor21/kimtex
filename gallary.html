@@ -1,0 +1,211 @@
+<!DOCTYPE html>  
+<html lang="uz">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Universitet Galereyasi</title>  
+    <style>  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
+
+        body {  
+            font-family: Arial, sans-serif;  
+            line-height: 1.6;  
+            background-color: rgb(241, 196, 15);  /* Och kulrang */  
+            color: #2c3e50;  /* Matn uchun qorong'u ko'k */  
+        }  
+
+        header {  
+            background-color: #3498db;  /* Yorqin ko'k */  
+            color: white;  
+            padding: 20px 0;  
+            text-align: center;  
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+        }  
+
+        .container {  
+            width: 80%;  
+            margin: 0 auto;  
+        }  
+
+        .about {  
+            background-color: #ffffff;  /* Oq fon */  
+            padding: 20px;  
+            border-radius: 8px;  
+            margin: 20px 0;  
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
+        }  
+
+        .gallery {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+            gap: 15px;  
+            margin-top: 20px;  
+        }  
+
+        .gallery-item {  
+            position: relative;  
+            overflow: hidden;  
+            border-radius: 8px;  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);  
+            background-color: #ffffff;  /* Oq fon */  
+        }  
+
+        .gallery-item video, .gallery-item img {  
+            width: 100%;  
+            border-radius: 8px;  
+        }  
+
+        .caption {  
+            position: absolute;  
+            bottom: 0;  
+            background-color: rgba(0, 0, 0, 0.7);  /* Qorong'u yarim shaffof fon */  
+            color: #fff;  
+            width: 100%;  
+            text-align: center;  
+            padding: 10px;  
+            border-radius: 0 0 8px 8px;  
+        }  
+
+        footer {  
+            background-color: #2c3e50;  /* Qorong'u ko'k */  
+            color: white;  
+            text-align: center;  
+            padding: 20px 0;  
+        }  
+
+        footer a {  
+            color: #f39c12;  /* Oltin rang */  
+            text-decoration: none;  
+        }  
+
+        footer a:hover {  
+            text-decoration: underline;  
+        }  
+
+        footer ul {  
+            list-style: none;  
+            padding: 0;  
+        }  
+
+        footer ul li {  
+            margin-bottom: 5px;  
+        }  
+
+        footer h4 {  
+            color: #f39c12;  /* Oltin rang */  
+        }  
+
+        @media (max-width: 600px) {  
+            .container {  
+                width: 90%;  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <div class="container">  
+            <h1>Universitet Galereyasi</h1>  
+            <p>Universitetimizdagi hayajonli onlarni o'rganing</p>  
+        </div>  
+    </header>  
+
+    <div class="container">  
+        <section class="about">  
+            <h2>Universitet Haqida</h2>  
+            <p>Universitetimiz 1990 yildan beri ta'lim va ilm-fan sohasida yetakchi hisoblanadi. Bizning vazifamiz yangi avlod mutaxassislarini tayyorlash va jamiyat rivojiga hissa qo'shishdir. Talabalarimiz pul olish imkoniyatlari, stipendiyalar, katta kutubxonalar va ilgari surish imkoniyatlari bilan ta'minlanadi.</p>  
+        </section>  
+
+        <section class="gallery">  
+            <h2>Video Galereya</h2>  
+            <div class="gallery-item">  
+                <video controls>  
+                    <source src="videos/video1.mp4" type="video/mp4">  
+                    Sizning brauzeringiz video formatni qo'llab-quvvatlamaydi.  
+                </video>  
+                <div class="caption">Universitet kampusida faoliyatlar.</div>  
+            </div>  
+            <div class="gallery-item">  
+                <video controls>  
+                    <source src="videos/video2.mp4" type="video/mp4">  
+                    Sizning brauzeringiz video formatni qo'llab-quvvatlamaydi.  
+                </video>  
+                <div class="caption">O'qituvchilar va talabalar dars jarayonida.</div>  
+            </div>  
+        </section>  
+
+        <section class="gallery">  
+            <h2>Rasmlar Galereyasi</h2>  
+            <div class="gallery-item">  
+                <img src="images/about/about-us.jpg" alt="Rasm 1">  
+                <div class="caption">Universitet binosi.</div>  
+            </div>  
+            <div class="gallery-item">  
+                <img src="images/photo2.jpg" alt="Rasm 2">  
+                <div class="caption">Kutubxona ichki ko'rinishi.</div>  
+            </div>  
+            <div class="gallery-item">  
+                <img src="images/photo3.jpg" alt="Rasm 3">  
+                <div class="caption">Talabalar hayoti.</div>  
+            </div>  
+        </section>  
+    </div>  
+
+    <footer>  
+        <div class="container">  
+            <div>  
+                <img src="images/logo.png" alt="logo" style="max-width: 100px;">  
+                <p>Sirdaryo viloyati, Yangiyer tumani, location #87845451514</p>  
+                <p>Telefon: +998 (88) 246 2105</p>  
+                <p>Telefon: +998 (90) 203 2909</p>  
+                <p>Email: <a href="mailto:21.faxriyor@gmail.com">21.faxriyor@gmail.com</a></p>  
+            </div>  
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">  
+                <div>  
+                    <h4>Universitet</h4>  
+                    <ul>  
+                        <li><a href="about.html">Institut haqida</a></li>  
+                        <li><a href="teacher.html">Faxriylar</a></li>  
+                        <li><a href="contact.html">Bog‘lanish</a></li>  
+                        <li><a href="blog.html">Yangiliklar</a></li>  
+                    </ul>  
+                </div>  
+                <div>  
+                    <h4>Faoliyat</h4>  
+                    <ul>  
+                        <li><a href="courses.html">Yo‘nalishlar</a></li>  
+                        <li><a href="event-single.html">Tadbirlar</a></li>  
+                        <li><a href="gallary.html">Galereya</a></li>  
+                        <li><a href="FAQs.html">FAQs</a></li>  
+                    </ul>  
+                </div>  
+                <div>  
+                    <h4>Foydali manbalar</h4>  
+                    <ul>  
+                        <li><a href="#">ZiyoNet</a></li>  
+                        <li><a href="#">MyGov</a></li>  
+                        <li><a href="#">Oliy ta'lim, fan va innovatsiyalar vazirligi</a></li>  
+                        <li><a href="#">Yoshlar media markazi</a></li>  
+                    </ul>  
+                </div>  
+                <div>  
+                    <h4>Hamkorlar</h4>  
+                    <ul>  
+                        <li><a href="#">O‘zbekiston yoshlar ittifoqi</a></li>  
+                        <li><a href="#">Sirdaryo viloyati hokimligi</a></li>  
+                        <li><a href="#">Yangi O‘zbekiston universiteti</a></li>  
+                        <li><a href="#">Xalq ta'limi vazirligi</a></li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+        <div style="background-color: #34495e; padding: 10px 0; text-align: center; margin-top: 20px;">  
+            <p>Nasr 2025 &copy; Ishlab chiqilgan: <a href="mailto:21.faxriyor@gmail.com">21.faxriyor@gmail.com</a>. Barcha huquqlar himoyalangan.</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>
